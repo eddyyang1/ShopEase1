@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Your Seller Dashboard</h2>
+<a href="{% url 'add-product' %}">Add a new product</a>
+<ul>
+    {% for product in products %}
+        <li>
+            <h3>{{ product.name }}</h3>
+            <p>${{ product.price }} | In Stock: {{ product.stock }}</p>
+            <a href="{% url 'product-edit' product.id %}">Edit</a>
+            <a href="{% url 'product-delete' product.id %}">Delete</a>
+        </li>
+    {% empty %}
+        <p>You have no products yet. Add one now!</p>
+    {% endfor %}
+</ul>
+{% endblock %}

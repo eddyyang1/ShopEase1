@@ -1,0 +1,90 @@
+/* static/css/styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ff9800;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Product List */
+ul.products {
+    list-style: none;
+    padding: 0;
+}
+
+ul.products li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ul.products li h3 {
+    margin: 0;
+    color: #333;
+}
+
+ul.products li p {
+    margin: 5px 0;
+    color: #666;
+}
+
+ul.products li .price {
+    font-size: 1.2em;
+    color: #ff5722;
+}
+
+/* Chat Styles */
+.chat-messages {
+    background-color: #fff;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    resize: none;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff9800;
+}
